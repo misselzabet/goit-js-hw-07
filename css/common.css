@@ -12,3 +12,263 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#categories {
+  width: 440px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.item {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+ul{
+  list-style: none;
+}
+.item ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.item ul li {
+  padding: 4px 0;
+
+  font-size: 1em;
+  color: #666;
+}
+
+#categories ul li {
+border: 1px solid #808080 ;
+margin-bottom: 8px;
+}
+
+
+
+.login-form {
+  background-color: #ffffff;
+  width: 300px; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+ background: #4E75FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover, .login-form button:focus {
+  background-color: #6C8CFF;
+}
+
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper input {
+  padding-left: 10px; 
+}
+
+.input-wrapper::before {
+  content: "Please enter your name";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+input#name-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+input#name-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+h1 {
+  font-size: 24px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.widget {
+  background-color: #ffffff;
+  width: 345px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.widget p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.color {
+  font-weight: bold;
+}
+
+.change-color {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.change-color:hover {
+  background-color: #0056b3;
+}
+
+
+#controls {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#controls input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button[data-create], button[data-destroy] {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[data-create] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[data-create]:hover {
+  background-color: #0056b3;
+}
+
+button[data-destroy] {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button[data-destroy]:hover {
+  background-color: #cc0000;
+}
+
+#boxes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 800px; 
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33% - 20px);
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
